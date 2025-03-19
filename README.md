@@ -26,3 +26,17 @@ git commit -m "Mensaje del commit"  # Guarda los cambios en el historial
 git log  # Muestra el historial de commits
 git log --oneline --graph --decorate --all  # Historial en una línea con ramas
 ```
+
+---
+
+## 🔄 Trabajo con Ramas
+```bash
+git branch  # Lista todas las ramas
+git branch nueva_rama  # Crea una nueva rama
+git checkout nueva_rama  # Cambia a otra rama (Git <2.23)
+git switch nueva_rama  # Cambia de rama (Git 2.23+)
+git checkout -b nueva_rama  # Crea y cambia a la nueva rama
+git switch -c nueva_rama  # Alternativa moderna a checkout -b
+git merge otra_rama  # Fusiona 'otra_rama' en la actual
+git branch -d nombre_rama  # Borra una rama local
+```
