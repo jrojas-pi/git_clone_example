@@ -82,3 +82,14 @@ git stash list  # Muestra la lista de stashes guardados
 git stash pop  # Recupera los cambios guardados en el stash
 git stash drop  # Elimina un stash específico
 ```
+
+---
+
+## 📀 Tags (Etiquetas para versiones)
+```bash
+git tag -a v1.0 -m "Versión 1.0"  # Crea un tag anotado
+git tag  # Lista todas las etiquetas
+git push origin v1.0  # Envía un tag al remoto
+git push --tags  # Envía todos los tags al remoto
+```
+
