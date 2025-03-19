@@ -40,3 +40,45 @@ git switch -c nueva_rama  # Alternativa moderna a checkout -b
 git merge otra_rama  # Fusiona 'otra_rama' en la actual
 git branch -d nombre_rama  # Borra una rama local
 ```
+
+---
+
+## 🚀 Sincronización con Remoto
+```bash
+git remote add origin URL_DEL_REPO  # Vincula el repo local con el remoto
+git remote -v  # Muestra los repositorios remotos configurados
+git push origin main  # Envía cambios a la rama 'main'
+git push -u origin main  # Sube la rama actual y la vincula con remoto
+git pull origin main  # Descarga y fusiona cambios del remoto
+git fetch origin  # Descarga cambios sin fusionarlos
+```
+
+---
+
+## 🚑 Deshacer Cambios
+```bash
+git checkout -- archivo.txt  # Revierte cambios en un archivo
+git reset HEAD archivo.txt  # Quita el archivo del área de staging
+git reset --soft HEAD~1  # Revierte el último commit pero mantiene los cambios
+git reset --hard HEAD~1  # Revierte el último commit y borra los cambios
+git revert HEAD  # Crea un commit que revierte el último commit
+```
+
+---
+
+## 🔍 Ver y Comparar Cambios
+```bash
+git diff  # Muestra los cambios en los archivos
+git diff --staged  # Muestra los cambios en el área de staging
+git show HEAD  # Muestra detalles del último commit
+```
+
+---
+
+## 🔒 Manejo de Stash (Guardar Cambios Temporales)
+```bash
+git stash  # Guarda los cambios sin hacer commit
+git stash list  # Muestra la lista de stashes guardados
+git stash pop  # Recupera los cambios guardados en el stash
+git stash drop  # Elimina un stash específico
+```
