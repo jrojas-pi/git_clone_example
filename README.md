@@ -1,4 +1,8 @@
-# git_clone_example
-This is a repository for a basic git course for pi consulting
+# GIT Comandos Básicos
 
-y el equipo de DEV y DS
+## 📚 Configuración Inicial
+```bash
+git config --global user.name "Tu Nombre"
+git config --global user.email "tuemail@example.com"
+git config --list  # Ver configuración actual
+```
